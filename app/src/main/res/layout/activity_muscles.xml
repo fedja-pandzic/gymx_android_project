@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MachinesActivity">
+    tools:context=".MusclesActivity">
 
     <ImageView
         android:id="@+id/machines_background_imageView"
@@ -16,7 +16,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/machines_background" />
 
     <ImageView
@@ -31,71 +31,87 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/white_logo_transparent" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/full_equipment_button"
-        android:layout_width="0dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="48dp"
-        android:backgroundTint="@color/white"
-
-
-        android:text="Full equipment"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:cornerRadius="75dp"
-        app:layout_constraintBottom_toTopOf="@+id/bars_and_weights_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/bars_and_weights_button"
-        android:layout_width="0dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="48dp"
-        android:backgroundTint="@color/white"
-
-        android:text="Bars and weights"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:cornerRadius="75dp"
-        app:layout_constraintBottom_toTopOf="@+id/calisthenics_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/calisthenics_button"
-        android:layout_width="0dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="120dp"
-        android:backgroundTint="@color/white"
-        android:text="Calisthenics                  (No equipment)"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        app:cornerRadius="75dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
-        android:id="@+id/top_text_view"
+        android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="58dp"
-        android:layout_marginEnd="48dp"
-        android:text="Please choose what equipment is at your disposal:"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:text="Please choose your muscle group:"
         android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/full_equipment_button"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/machines_background_imageView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="@color/white"
+        android:text="Chest"
+
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="75dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="@color/white"
+        android:text="Back"
+
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="75dp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="@color/white"
+        android:text="Arms"
+
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="75dp"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="150dp"
+        android:backgroundTint="@color/white"
+        android:text="Legs"
+
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="75dp"
+        app:layout_constraintBottom_toBottomOf="@+id/machines_background_imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

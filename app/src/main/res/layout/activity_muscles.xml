@@ -19,13 +19,27 @@
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/machines_background" />
 
+    <ImageView
+        android:id="@+id/logo_imageView"
+        android:layout_width="0dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="256dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/white_logo_transparent" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:textColor="@color/white"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
         android:text="Please choose your muscle group:"
+        android:textColor="@color/white"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"

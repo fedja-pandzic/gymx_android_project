@@ -23,7 +23,8 @@ public class MachinesActivity extends AppCompatActivity {
         fullMachinesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MachinesActivity.this,)
+                Intent intent = new Intent(MachinesActivity.this,MusclesActivity.class);
+                startActivity(intent);
             }
         });
 

@@ -10,15 +10,59 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GymX">
         <activity
-            android:name=".MusclesActivity"
+            android:name=".RoutineCalisthenicsLegsActivity"
             android:exported="false" />
+        <activity
+            android:name=".RoutineCalisthenicsArmsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RoutineCalisthenicsBackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RoutineCalisthenicsChestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RoutineBarLegsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RoutineBarArmsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RoutineBarBackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RoutineBarChestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RoutineFullLegsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RoutineFullArmsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RoutineFullBackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RoutineFullChestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MusclesCalisthenicsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MusclesBarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MusclesFullActivity"
+            android:exported="false"
+            android:parentActivityName=".MachinesActivity" />
         <activity
             android:name=".MachinesActivity"
             android:exported="false"
             android:parentActivityName=".MainMenuActivity" />
         <activity
             android:name=".MainMenuActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".RegisterActivity"
             android:exported="false"

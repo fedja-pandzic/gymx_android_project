@@ -13,7 +13,7 @@ import com.google.android.material.button.MaterialButton;
 public class RegisterActivity extends AppCompatActivity {
 
     MaterialButton createAccountButton;
-    EditText username, password, repeatPassword;
+    EditText username, password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,6 @@ public class RegisterActivity extends AppCompatActivity {
 
         username = findViewById(R.id.register_username_input);
         password = findViewById(R.id.register_password_input);
-        repeatPassword = findViewById(R.id.register_repeat_password_input);
 
         createAccountButton = findViewById(R.id.create_account_button);
 
@@ -48,13 +47,13 @@ public class RegisterActivity extends AppCompatActivity {
                             });
                         }
                     }).start();
+
                 }else{
-                    Toast.makeText(getApplicationContext(), "Fill in all fields.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Incorrect repeated password or did not fill in all fields.", Toast.LENGTH_SHORT).show();
                 }
 
-                Intent intent = new Intent(RegisterActivity.this, SignInActivity.class);
+                Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
                 startActivity(intent);
-
             }
         });
     }
